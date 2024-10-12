@@ -1045,7 +1045,7 @@ body.nav-active { overflow: hidden; }
 
 .menu .section-title { margin-block-end: 40px; }
 
-.menu .grid-list { margin-block-end: 50px; padding-left: 120px;}
+.menu .grid-list { margin-block-end: 50px;}
 
 .menu-card {
   display: flex;
