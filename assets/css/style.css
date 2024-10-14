@@ -639,7 +639,7 @@ body.nav-active { overflow: hidden; }
 .nav-open-btn .line {
   width: 30px;
   height: 2px;
-  background-color: #ffa364;
+  background-color: #ff8d42;
   margin-block: 4px;
   transform-origin: left;
   animation: menuBtn 400ms ease-in-out alternate infinite;
