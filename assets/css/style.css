@@ -834,8 +834,8 @@ body.nav-active { overflow: hidden; }
 
 .hero-btn {
   position: absolute;
-  bottom: 15px;
-  right: 150px;
+  bottom: 0px;
+  right: 250px;
   z-index: 2;
   background-color: #fff;
   width: 110px;
