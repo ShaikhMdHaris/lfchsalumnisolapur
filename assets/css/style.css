@@ -835,9 +835,9 @@ body.nav-active { overflow: hidden; }
 .hero-btn {
   position: absolute;
   bottom: 15px;
-  right: 15px;
+  right: 150px;
   z-index: 2;
-  background-color: var(--gold-crayola);
+  background-color: #fff;
   width: 110px;
   height: 110px;
   padding: 12px;
@@ -858,9 +858,14 @@ body.nav-active { overflow: hidden; }
 }
 
 .hero-btn::after {
+  content: "";
+  position: absolute;
   inset: 0;
-  border: 1px solid var(--gold-crayola);
-  animation: rotate360 15s linear infinite;
+  border: 3px solid #ffa364; /* Make the border thicker and more noticeable */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  animation: rotate360 10s linear infinite; /* Faster rotation for more attention */
+  box-shadow: 0 0 15px rgba(255, 163, 100, 0.6), 0 0 30px rgba(255, 163, 100, 0.4); /* Glowing effect */
+  z-index: -1; /* Keep the effect behind the button content */
 }
 
 .slider-reveal {
@@ -1404,7 +1409,7 @@ textarea.input-field {
 .back-top-btn {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   background-color: var(--gold-crayola);
   color: var(--smoky-black-1);
   font-size: 22px;
@@ -1429,6 +1434,36 @@ textarea.input-field {
   opacity: 1;
   visibility: visible;
 }
+
+.register-btn {
+  position: fixed;
+  right: 20px; /* Adjust this value to change the distance from the right edge */
+  bottom: 20px; /* Adjust this value to change the distance from the bottom edge */
+  background-color: #ffa364;
+  color: #273248;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex; /* This aligns the icon and text */
+  align-items: center; /* Vertically center the content */
+  gap: 10px; /* Adds space between the icon and text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  z-index: 1000; /* Keeps the button on top of other content */
+}
+
+.register-btn:hover {
+  background-color: #273248; /* Hover effect */
+  border: 1px solid #ffa364;
+  color: #fff;
+}
+
+.register-btn ion-icon {
+  font-size: 20px; /* Adjust icon size */
+}
+
 
 
 
@@ -1994,7 +2029,7 @@ textarea.input-field {
 
   .hero-btn {
     bottom: 50px;
-    right: 50px;
+    right: 85%;
     transform: scale(1);
   }
 
