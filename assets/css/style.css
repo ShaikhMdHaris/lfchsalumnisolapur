@@ -313,6 +313,14 @@ body.nav-active { overflow: hidden; }
   object-fit: cover;
 }
 
+.img-cover-75 {
+  width: 75%; /* Adjust the percentage to control the width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Keep the cover effect */
+  display: block; /* Ensure it's treated as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
 .section-subtitle {
   position: relative;
   color: var(--gold-crayola);
@@ -1440,9 +1448,12 @@ textarea.input-field {
   right: 20px; /* Adjust this value to change the distance from the right edge */
   bottom: 20px; /* Adjust this value to change the distance from the bottom edge */
   background-color: #ffa364;
-  color: #273248;
+  border: 2px solid #273248;
+  color: #1e2636;
   padding: 12px 20px;
-  font-size: 16px;
+  /* font-size: large; */
+  font-weight: 800;
+  font-size: 18px;
   text-align: center;
   border-radius: 5px;
   text-decoration: none;
@@ -1461,7 +1472,7 @@ textarea.input-field {
 }
 
 .register-btn ion-icon {
-  font-size: 20px; /* Adjust icon size */
+  font-size: 24px; /* Adjust icon size */
 }
 
 
@@ -2029,7 +2040,7 @@ textarea.input-field {
 
   .hero-btn {
     bottom: 50px;
-    right: 85%;
+    right: 90%;
     transform: scale(1);
   }
 
