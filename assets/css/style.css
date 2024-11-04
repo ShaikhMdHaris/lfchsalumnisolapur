@@ -884,7 +884,7 @@ body.nav-active { overflow: hidden; }
   content: "";
   position: absolute;
   inset: 0;
-  border: 3px solid #ffa364; /* Make the border thicker and more noticeable */
+  border: 2px solid #1e2636da; /* Make the border thicker and more noticeable */
   border-radius: 8px; /* Optional: Add rounded corners */
   animation: rotate360 10s linear infinite; /* Faster rotation for more attention */
   box-shadow: 0 0 15px rgba(255, 163, 100, 0.6), 0 0 30px rgba(255, 163, 100, 0.4); /* Glowing effect */
