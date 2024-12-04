@@ -1466,6 +1466,7 @@ textarea.input-field {
   border: 2px solid #273248;
   color: #1e2636;
   padding: 12px 20px;
+  width: 148px;
   /* font-size: large; */
   font-weight: 800;
   font-size: 18px;
@@ -1588,6 +1589,7 @@ textarea.input-field {
 
   .header .btn {
     display: block;
+    left: 100px;
     margin-inline-start: auto;
   }
 

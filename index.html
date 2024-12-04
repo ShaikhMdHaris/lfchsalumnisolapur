@@ -240,11 +240,39 @@
         <span class="text text-2" aria-hidden="true">Contact Us</span>
       </a>
 
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <span class="line line-1"></span>
-        <span class="line line-2"></span>
-        <span class="line line-3"></span>
-      </button>
+      <button class="menu-btn" aria-label="Menu" data-nav-toggler 
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px; /* Space between icon and text */
+          width: auto;
+          height: 40px;
+          border: none;
+          border-radius: 10%;
+          background-color: #ffa364;
+     /* border: 2px solid #273248; */
+     
+          padding: 0 15px; /* Add horizontal padding for text */
+          cursor: pointer;
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+          transition: all 0.3s ease-in-out;
+          position: relative;
+          font-size: 14px; /* Smaller font size */
+          font-weight: 600;
+        ">
+  
+  </span>
+  <!-- Menu Text -->
+  <span style="
+          font-size: 16px; /* Match text size */
+          font-weight: 600; 
+          color: #1e2636;">
+    Explore
+  </span>
+</button>
+
+
 
       <div class="overlay" data-nav-toggler data-overlay></div>
 
@@ -285,7 +313,7 @@
               Join us as we come together to create an unforgettable experience!
             </p>
 
-            <a href="schedule.html" class="btn btn-primary slider-reveal" style="
+            <!-- <a href="schedule.html" class="btn btn-primary slider-reveal" style="
       display: inline-block;
       background: linear-gradient(135deg,#fbc53cce, #fff985c4, #fbc53cce);
       color: #273248;
@@ -318,7 +346,7 @@
             text-align: center;
             line-height: 50px;
           ">We'll Meet You at the Reunion</span>
-            </a>
+            </a> -->
 
 
           </li>
@@ -341,7 +369,7 @@
               What comes to to your mind after hearing about this Reunion
             </p>
 
-            <a href="schedule.html" class="btn btn-primary slider-reveal" style="
+            <!-- <a href="schedule.html" class="btn btn-primary slider-reveal" style="
                display: inline-block;
                background: linear-gradient(135deg,#fbc53cce, #fff985c4, #fbc53cce);
                color: #273248;
@@ -374,7 +402,7 @@
                      text-align: center;
                      line-height: 50px;
                    ">We'll Meet You at the Reunion</span>
-            </a>
+            </a> -->
 
 
           </li>
@@ -398,7 +426,7 @@
               making it a remarkable success!
             </p>
 
-            <a href="schedule.html" class="btn btn-primary slider-reveal" style="
+            <!-- <a href="schedule.html" class="btn btn-primary slider-reveal" style="
       display: inline-block;
       background: linear-gradient(135deg,#fbc53cce, #fff985c4, #fbc53cce);
       color: #273248;
@@ -431,7 +459,7 @@
             text-align: center;
             line-height: 50px;
           ">We'll Meet You at the Reunion</span>
-            </a>
+            </a> -->
 
 
           </li>
@@ -1498,9 +1526,33 @@
     - #BACK TO TOP
   -->
 
-  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-  </a>
+  <a href="schedule.html" class="register-btn" aria-label="Event Schedule" 
+   style="
+     position: fixed;
+     left: 20px;
+     bottom: 20px;
+     background-color: #ffa364;
+     border: 2px solid #273248;
+     color: #1e2636;
+     padding: 12px 20px;
+     font-weight: 800;
+     font-size: 18px;
+     text-align: center;
+     border-radius: 5px;
+     text-decoration: none;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     transition: background-color 0.3s ease;
+     z-index: 1000;
+   "
+   onmouseover="this.style.backgroundColor='#273248'; this.style.color='#fff'; this.style.border='1px solid #ffa364';" 
+   onmouseout="this.style.backgroundColor='#ffa364'; this.style.color='#1e2636'; this.style.border='2px solid #273248';">
+  <ion-icon name="list-outline" style="font-size: 20px;" aria-hidden="true"></ion-icon>
+  <span>Event Schedule</span>
+</a>
+
 
   <!-- <a href="faq.html" class="register-btn" aria-label="Register">
     <ion-icon name="person-add-outline" aria-hidden="true"></ion-icon> FAQ
