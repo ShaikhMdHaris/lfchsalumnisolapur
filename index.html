@@ -234,11 +234,11 @@
 
       </nav>
 
-      <a href="mailto:lfchsalumnisolapur@gmail.com" class="btn btn-secondary">
+      <!-- <a href="mailto:lfchsalumnisolapur@gmail.com" class="btn btn-secondary">
         <span class="text text-1">Contact Us</span>
 
         <span class="text text-2" aria-hidden="true">Contact Us</span>
-      </a>
+      </a> -->
 
       <button class="menu-btn" aria-label="Menu" data-nav-toggler 
         style="
@@ -493,40 +493,34 @@
 
 
       <!-- Countdown Section -->
-      <section class="countdown-section text-center" aria-label="countdown" style="margin: 50px 0; text-align: center;">
-        <div class="container" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
-
-          <!-- Reunion Date and Time -->
-          <p style="color: #f3c623; font-size: 1.5rem; margin-bottom: 10px;">Reunion Date: 22nd December 2024, 7:30 AM
+      <section class="countdown-section text-center" aria-label="reunion" style="margin: 50px 0; text-align: center; position: relative;">
+        <div style="background-color: rgba(0, 0, 0, 0.7); padding: 30px; border-radius: 15px; position: relative; overflow: hidden;">
+      
+          <!-- Background Overlay -->
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(243, 198, 35, 0.2), rgba(255, 255, 255, 0.05)); z-index: 0; pointer-events: none;"></div>
+      
+          <!-- Reunion Completed Message -->
+          <p id="fadeInText" style="color: #f3c623; font-size: 1.5rem; margin-bottom: 10px; opacity: 0; transition: opacity 1s ease-in-out;">
+            Reunion Date: 22nd December 2024
           </p>
-
-          <h2 class="headline-1 section-title" style="font-size: 2.5rem; color: #fff; margin-bottom: 20px;">
-            Get Ready: The Reunion Countdown Begins!
+      
+          <!-- Animated Title -->
+          <h2 id="slideInTitle" style="font-size: 3rem; color: #fff; margin-bottom: 20px; position: relative; opacity: 0; transform: translateY(-50px); transition: all 1.2s ease-out;">
+            🎉 A Memorable Reunion: Cherished Moments with Batchmates! 🎉
           </h2>
-
-          <div id="countdown" class="countdown-timer" style="display: flex; justify-content: center; gap: 1.5rem;">
-            <div style="display: flex; flex-direction: column; align-items: center;">
-              <span id="days" style="font-weight: bold; font-size: 3rem; color: #f3c623;">00</span> Days
-            </div>
-            <div style="display: flex; flex-direction: column; align-items: center;">
-              <span id="hours" style="font-weight: bold; font-size: 3rem; color: #f3c623;">00</span> Hours
-            </div>
-            <div style="display: flex; flex-direction: column; align-items: center;">
-              <span id="minutes" style="font-weight: bold; font-size: 3rem; color: #f3c623;">00</span> Minutes
-            </div>
-            <div style="display: flex; flex-direction: column; align-items: center;">
-              <span id="seconds" style="font-weight: bold; font-size: 3rem; color: #f3c623;">00</span> Seconds
-            </div>
-          </div>
-
-          <!-- Register Now Button (Centered) -->
+      
+          <!-- Animated Text -->
+          <p id="zoomInText" style="color: #fff; font-size: 1.2rem; margin-bottom: 20px; position: relative; opacity: 0; transform: scale(0.8); transition: all 1.4s ease-in-out;">
+            The reunion was a tremendous success! We relived old memories, created new ones, and enjoyed an unforgettable time together. 
+            A heartfelt thank you to everyone who made this possible! 💖
+          </p>
+      
+          <!-- Animated Floating Button -->
           <div style="display: flex; justify-content: center; margin-top: 30px;">
-            <a href="https://form.qfixonline.com/eslsof" class="btn btn-primary"
-              style="background-color: #f3c623; color: #000; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 1.2rem;">
-              Register Now
+            <a id="bounceInButton" href="https://yourphotoalbumlink.com" style="background-color: #f3c623; color: #000; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-size: 1.2rem; font-weight: bold; position: relative; opacity: 0; transform: translateY(50px); transition: all 1.6s ease-in-out;">
+              View Event Photos 📸
             </a>
           </div>
-
         </div>
       </section>
 
@@ -1232,13 +1226,13 @@
 
             </div>
 
-            <button type="button" class="btn btn-secondary"
+            <!-- <button type="button" class="btn btn-secondary"
               onclick="window.open('https://form.qfixonline.com/eslsof', '_blank')">
               <span class="text text-1" style="color: #273248;">
                 Click here to fill out the form and Register yourself for the Reunion
               </span>
               <span class="text text-2" aria-hidden="true">Register yourself for the Reunion</span>
-            </button>
+            </button> -->
 
 
           </div>
@@ -1534,7 +1528,7 @@
     - #BACK TO TOP
   -->
 
-  <a href="schedule.html" class="register-btn" aria-label="Event Schedule" 
+  <!-- <a href="schedule.html" class="register-btn" aria-label="Event Schedule" 
    style="
      position: fixed;
      left: 20px;
@@ -1559,16 +1553,16 @@
    onmouseout="this.style.backgroundColor='#ffa364'; this.style.color='#1e2636'; this.style.border='2px solid #273248';">
   <ion-icon name="list-outline" style="font-size: 20px;" aria-hidden="true"></ion-icon>
   <span>Schedule</span>
-</a>
+</a> -->
 
 
   <!-- <a href="faq.html" class="register-btn" aria-label="Register">
     <ion-icon name="person-add-outline" aria-hidden="true"></ion-icon> FAQ
   </a> -->
-
+<!-- 
   <a href="https://form.qfixonline.com/eslsof" class="register-btn" aria-label="Register">
     <ion-icon name="person-add-outline" aria-hidden="true"></ion-icon> Register
-  </a>
+  </a> -->
 
 
 
@@ -1606,7 +1600,33 @@
     }
 
     document.addEventListener("DOMContentLoaded", startCountdown);
+ 
+    // Add animations via JavaScript to achieve effects inline
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(() => {
+        document.getElementById("fadeInText").style.opacity = "1";
+      }, 100);
+  
+      setTimeout(() => {
+        const slideInTitle = document.getElementById("slideInTitle");
+        slideInTitle.style.opacity = "1";
+        slideInTitle.style.transform = "translateY(0)";
+      }, 500);
+  
+      setTimeout(() => {
+        const zoomInText = document.getElementById("zoomInText");
+        zoomInText.style.opacity = "1";
+        zoomInText.style.transform = "scale(1)";
+      }, 1000);
+  
+      setTimeout(() => {
+        const bounceInButton = document.getElementById("bounceInButton");
+        bounceInButton.style.opacity = "1";
+        bounceInButton.style.transform = "translateY(0)";
+      }, 1500);
+    });
   </script>
+  
 
   <!-- 
     - ionicon link
