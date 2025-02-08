@@ -305,13 +305,12 @@
             </p>
 
             <h1 class="display-1 hero-title slider-reveal" style="background-color: rgba(32, 32, 32, 0.441);">
-              Celebrating the <br>
-              Mega Reunion
-            </h1>
-
-            <p class="body-2 hero-text slider-reveal">
-              Join us as we come together to create an unforgettable experience!
-            </p>
+              Reliving the <br> Mega Reunion Moments!
+          </h1>
+          
+          <p class="body-2 hero-text slider-reveal">
+              What an unforgettable gathering—filled with joy, laughter, and nostalgia!
+          </p>
 
             <!-- <a href="schedule.html" class="btn btn-primary slider-reveal" style="
       display: inline-block;
@@ -360,13 +359,12 @@
             <p class="label-2 section-subtitle slider-reveal"
               style="font-size: larger; background-color: rgba(0, 0, 0, 0.41);">Great Experience</p>
 
-            <h1 class="display-1 hero-title slider-reveal" style="background-color: rgba(32, 32, 32, 0.441);">
-              Let’s come together to<br> meet and greet<br>
-              our beloved mentors!
+              <h1 class="display-1 hero-title slider-reveal" style="background-color: rgba(32, 32, 32, 0.441);">
+                Cherishing the time spent <br> with our beloved mentors!
             </h1>
-
+            
             <p class="body-2 hero-text slider-reveal">
-              What comes to to your mind after hearing about this Reunion
+                Heartfelt conversations, endless memories, and priceless moments!
             </p>
 
             <!-- <a href="schedule.html" class="btn btn-primary slider-reveal" style="
@@ -416,14 +414,12 @@
             <p class="label-2 section-subtitle slider-reveal"
               style="font-size: larger; background-color: rgba(0, 0, 0, 0.41);">Incredible and Unforgettable</p>
 
-            <h1 class="display-1 hero-title slider-reveal" style="background-color: rgba(32, 32, 32, 0.441);">
-              Experience the most<br> joyous and nostalgic <br>event of your life.
+              <h1 class="display-1 hero-title slider-reveal" style="background-color: rgba(32, 32, 32, 0.441);">
+                A journey of smiles, nostalgia, <br> and lifelong connections!
             </h1>
-
-
+            
             <p class="body-2 hero-text slider-reveal">
-              Our dedicated committee is working hard to make this event a reality, so we invite you to support us in
-              making it a remarkable success!
+                Thank you to everyone who made this event a grand success—until we meet again!
             </p>
 
             <!-- <a href="schedule.html" class="btn btn-primary slider-reveal" style="
@@ -490,6 +486,30 @@
 
 
       </section>
+
+
+
+<!-- video teaser-video -->
+<section class="video-section text-center" style="margin: 50px 0; text-align: center;">
+  <div class="container" style="background: linear-gradient(45deg, rgba(243, 198, 35, 0.2), rgba(255, 255, 255, 0.05)); padding: 60px; border-radius: 10px; max-width: 80%; margin: 0 auto;">
+      
+      <h2 class="headline-1 section-title" style="font-size: 2.5rem; color: #fff; margin-bottom: 20px;">
+          Relive the Moments: Mega Reunion Teaser 🎥✨
+      </h2>
+
+      <div class="video-wrapper" style="display: flex; justify-content: center; align-items: center;">
+          <iframe id="teaser-video" width="700" height="400"
+              src="https://www.youtube.com/embed/_dksEKF0Z4A?enablejsapi=1&mute=1" 
+              title="Mega Reunion Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+              style="border-radius: 10px; max-width: 100%;">
+          </iframe>
+      </div>
+
+  </div>
+</section>
+
+
 
 
       <!-- Countdown Section -->
@@ -1624,6 +1644,24 @@
         bounceInButton.style.opacity = "1";
         bounceInButton.style.transform = "translateY(0)";
       }, 1500);
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let video = document.getElementById("teaser-video");
+        let videoPlayed = false;
+
+        function checkVideoVisibility() {
+            let rect = video.getBoundingClientRect();
+            if (!videoPlayed && rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                video.src += "&autoplay=1";
+                videoPlayed = true;
+            }
+        }
+
+        window.addEventListener("scroll", checkVideoVisibility);
+        window.addEventListener("resize", checkVideoVisibility);
+        checkVideoVisibility();
     });
   </script>
   
